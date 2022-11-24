@@ -7,6 +7,11 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { EntryBookComponent } from './entry-book/entry-book.component';
+import { DeleteBookComponent } from './delete-book/delete-book.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
+import { IssueBookComponent } from './issue-book/issue-book.component';
+import { SearchBookComponent } from './search-book/search-book.component';
+import { ViewBookComponent } from './view-book/view-book.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { EntryBookComponent } from './entry-book/entry-book.component';
     AdminLoginComponent,
     UserLoginComponent,
     UserRegisterComponent,
-    EntryBookComponent
+    EntryBookComponent,
+    DeleteBookComponent,
+    EditBookComponent,
+    IssueBookComponent,
+    SearchBookComponent,
+    ViewBookComponent
   ],
   imports: [
     BrowserModule,
