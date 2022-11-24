@@ -13,6 +13,7 @@ import { IssueBookComponent } from './issue-book/issue-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 const myRout:Routes=
@@ -66,7 +67,8 @@ const myRout:Routes=
     EditBookComponent,
     IssueBookComponent,
     SearchBookComponent,
-    ViewBookComponent
+    ViewBookComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
