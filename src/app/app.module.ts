@@ -14,6 +14,7 @@ import { SearchBookComponent } from './search-book/search-book.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormsModule } from '@angular/forms';
 
 
 const myRout:Routes=
@@ -73,7 +74,8 @@ const myRout:Routes=
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRout)
+    RouterModule.forRoot(myRout),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

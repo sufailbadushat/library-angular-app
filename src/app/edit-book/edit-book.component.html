@@ -9,10 +9,11 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Book Title</label>
-                    <input type="text" placeholder="Type book title" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" placeholder="Type book title"
+                        class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-dark font-monospace">Search </button>
+                    <button (click)="readValues()" class="btn btn-dark font-monospace">Search </button>
                 </div>
             </div>
         </div>

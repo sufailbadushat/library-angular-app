@@ -7,14 +7,14 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label text-dark">Username</label>
-                    <input type="text" placeholder="username" class="form-control font-monospace">
+                    <input name="username" [(ngModel)]="username" type="text" placeholder="username" class="form-control font-monospace">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label text-dark">Password</label>
-                    <input type="password" placeholder="password" name="" id="" class="form-control font-monospace">
+                    <input name="password" [(ngModel)]="password" type="password" placeholder="password" name="" id="" class="form-control font-monospace">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-dark font-monospace" >Login</button>
+                    <button (click)="readValues()" class="btn btn-dark font-monospace" >Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-12 text-center">
                     <a class="text-primary font-monospace" routerLink="/userRegister" >Goto User Registeration</a>
