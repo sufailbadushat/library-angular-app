@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-entry-book',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./entry-book.component.css']
 })
 export class EntryBookComponent {
+
+  constructor(private api: ApiService) { }
+
   title = ""
   author = ""
   description = ""
@@ -30,7 +34,28 @@ export class EntryBookComponent {
       'image': this.image
 
     }
-
     console.log(data);
+    this.api.addValue(data).subscribe(
+      (response: any) => {
+        console.log(response);
+        if (response.status == "success") {
+          alert("Book added successfully!");
+          this.title = ""
+          this.author = ""
+          this.description = ""
+          this.publisher = ""
+          this.language = ""
+          this.distributor = ""
+          this.releasedYear = ""
+          this.price = ""
+          this.image = ""
+
+        } else {
+          alert("Something went Wrong!");
+
+        }
+      }
+    )
+
   }
 }

@@ -6,46 +6,42 @@
         <div class="col-12 col-sm-12 div-md-12 col-lg-12 div-xl-12 div-xxl-12">
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <h1 class="text-dark" class="font-monospace" style="font-weight:bold">Add New Books</h1>
+                    <h2 class="text-dark" class="font-monospace fw-bold">Add New Books</h2>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Title</label>
+                    <label for="" class="form-label font-monospace fw-bold">Title</label>
                     <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Author</label>
+                    <label for="" class="form-label font-monospace fw-bold">Author</label>
                     <input name="author" [(ngModel)]="author" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label font-monospace">Description</label>
-                    <textarea name="description" [(ngModel)]="description" id="" rows="5" class="form-control"></textarea>
-                </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Publisher</label>
+                    <label for="" class="form-label font-monospace fw-bold">Publisher</label>
                     <input name="publisher" [(ngModel)]="publisher" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Language</label>
+                    <label for="" class="form-label font-monospace fw-bold">Language</label>
                     <input name="language" [(ngModel)]="language" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Distributor</label>
+                    <label for="" class="form-label font-monospace fw-bold">Distributor</label>
                     <input name="distributor" [(ngModel)]="distributor" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Released year</label>
-                    <input name="releasedYear" [(ngModel)]="releasedYear" type="date" class="form-control">
+                    <label for="" class="form-label font-monospace fw-bold">Released year</label>
+                    <input name="releasedYear" [(ngModel)]="releasedYear" type="number" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Price</label>
+                    <label for="" class="form-label font-monospace fw-bold">Price</label>
                     <input name="price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Upload Book image </label>
-                    <input name="image" [(ngModel)]="image" type="file" class="form-control">
+                    <label for="" class="form-label font-monospace fw-bold">Upload Book image </label>
+                    <input name="image" [(ngModel)]="image" type="url" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readValues()" class="btn btn-danger font-monospace">Add Book</button>
+                    <button (click)="readValues()" class="btn btn-dark py-1 mt-4 font-monospace fw-bold">Add Book</button>
                 </div>
             </div>
         </div>
