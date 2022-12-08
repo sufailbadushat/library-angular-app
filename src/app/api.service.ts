@@ -6,14 +6,18 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
 
-  addValue=(dataToSend:any)=>{
-      return this.http.post("http://localhost:8080/add",dataToSend);
+  addValue = (dataToSend: any) => {
+    return this.http.post("http://localhost:8080/add", dataToSend);
   }
 
-  viewValue=()=>{
+  viewValue = () => {
     return this.http.get("http://localhost:8080/view");
+  }
+
+  searchBook=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/search",dataToSend);
 }
 }
