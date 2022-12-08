@@ -16,6 +16,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { UserViewSearchComponent } from './user-view-search/user-view-search.component';
 
 
 const myRout:Routes=
@@ -59,6 +61,10 @@ const myRout:Routes=
   {
     path:"view",
     component:ViewBookComponent
+  },
+  {
+    path:"userView",
+    component:UserViewSearchComponent
   }
 
 ]
@@ -74,7 +80,9 @@ const myRout:Routes=
     IssueBookComponent,
     SearchBookComponent,
     ViewBookComponent,
-    NavBarComponent
+    NavBarComponent,
+    UserNavbarComponent,
+    UserViewSearchComponent
   ],
   imports: [
     BrowserModule,

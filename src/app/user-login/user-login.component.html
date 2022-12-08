@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container bg-light mt-5">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-3 d-flex align-items-center flex-column">
@@ -6,21 +6,21 @@
                     <h1 class="text-dark font-monospace" style="font-weight:bold">User Login</h1>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label text-dark">Username</label>
+                    <label for="" class="form-label fw-bold font-monospace">Username</label>
                     <input name="username" [(ngModel)]="username" type="text" placeholder="username" class="form-control font-monospace">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label text-dark">Password</label>
+                    <label for="" class="form-label fw-bold font-monospace">Password</label>
                     <input name="password" [(ngModel)]="password" type="password" placeholder="password" name="" id="" class="form-control font-monospace">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readValues()" class="btn btn-dark font-monospace" >Login</button>
+                    <button (click)="readValues()" class="btn btn-dark font-monospace py-1" >Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-12 text-center">
-                    <a class="text-primary font-monospace" routerLink="/userRegister" >Goto User Registeration</a>
+                    <a class="text-primary font-monospace fw-bold" routerLink="/userRegister" >Don't have account, Register here.</a>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-12 text-center">
-                    <a class="text-dark font-monospace" routerLink="/">Goto Admin Login</a>
+                    <a class=" font-monospace fw-bold" routerLink="/">Goto Admin Login</a>
                 </div>
             </div>
         </div>
