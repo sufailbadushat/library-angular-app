@@ -25,6 +25,10 @@ const myRout:Routes=
     component:AdminLoginComponent
   },
   {
+    path:"adminPortal",
+    component:AdminLoginComponent
+  },
+  {
     path:"userLogin",
     component:UserLoginComponent
   },

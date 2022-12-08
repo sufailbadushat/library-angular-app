@@ -5,16 +5,49 @@
         <div class="col-12 col-sm-12 div-md-12 col-lg-12 div-xl-12 div-xxl-12">
             <div class="row g-3 mt-2 d-flex align-items-center flex-column">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <h1 class="font-monospace" style="font-weight:bold"> Book Delete</h1>
+                    <h1 class="font-monospace" style="font-weight:bold"> Delete Books</h1>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label font-monospace">Book Title</label>
-                    <input name="title" [(ngModel)]="title" type="text" placeholder="Type book title" class="form-control">
+                    <label for="" class="form-label font-monospace fw-bold">Book Title</label>
+                    <input name="title" [(ngModel)]="title" type="text" placeholder="search here"
+                        class="form-control">
+                        
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button  (click)="readValues()" class="btn btn-dark font-monospace">Delete </button>
+                    <button (click)="readValues()" class="btn btn-dark font-monospace py-1">Search </button>
+                </div>
+               
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-4 mt-2">
+
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 text-center "
+                    *ngFor="let i of searchValue">
+                    <div class="card">
+                        <img height="300px" src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body bg-light">
+
+                            <p class="card-text font-monospace fw-bold">{{i.title}}</p>
+                            <p class="card-text font-monospace fw-bold">₹{{i.price}}</p>
+                            <a class="btn btn-dark font-monospace py-0" (click)="deleteBtnClick(i.id)">Delete</a>
+                        </div>
+                       
+                    </div>
                 </div>
             </div>
+
         </div>
+     
+
     </div>
 </div>
