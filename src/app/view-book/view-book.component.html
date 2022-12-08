@@ -9,18 +9,15 @@
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 text-center "
                     *ngFor="let i of books">
                     <div class="card">
-                        <img height="300px" src="{{i.img}}" class="card-img-top" alt="...">
+                        <img height="300px" src="{{i.image}}" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
 
-                            <p class="card-text font-monospace">{{i.title}}</p>
-                            <p class="card-text font-monospace">price:{{i.price}}</p>
+                            <p class="card-text font-monospace fw-bold">{{i.title}}</p>
+                            <p class="card-text font-monospace fw-bold">₹{{i.price}}</p>
                             <a href="#" class="btn btn-dark font-monospace py-0">Buy</a>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
 
         </div>
