@@ -23,7 +23,7 @@ export class AdminLoginComponent {
     if (this.username=="admin" && this.password=="12345") {
       this.route.navigate(['/add']);
     } else {
-      alert("invalid login")
+      alert("Invalid login!")
     }
   }
 }
