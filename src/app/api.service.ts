@@ -17,11 +17,14 @@ export class ApiService {
     return this.http.get("http://localhost:8080/view");
   }
 
-  searchBook=(dataToSend:any)=>{
-    return this.http.post("http://localhost:8080/search",dataToSend);
-}
+  searchBook = (dataToSend: any) => {
+    return this.http.post("http://localhost:8080/search", dataToSend);
+  }
 
-deleteBook=(dataToSend:any)=>{
-  return this.http.post("http://localhost:8080/delete",dataToSend);
-}
+  deleteBook = (dataToSend: any) => {
+    return this.http.post("http://localhost:8080/delete", dataToSend);
+  }
+  addUser = (dataToSend: any) => {
+    return this.http.post("http://localhost:8080/addUser", dataToSend);
+  }
 }

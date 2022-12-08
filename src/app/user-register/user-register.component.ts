@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-user-register',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-register.component.css']
 })
 export class UserRegisterComponent {
+
+  constructor(private api:ApiService){}
 
   name = ""
   adharNo = ""
@@ -34,6 +37,29 @@ export class UserRegisterComponent {
     }
 
     console.log(data)
-  }
+  
+  this.api.addUser(data).subscribe(
+    (response:any)=>{
+      console.log(response);
+      if(response.status =="success" && this.password == this.confirmPassword){
+        console.log(data);
+        alert("Registered successfully! \n\nGoto login page.");
+        this.name=""
+        this.address=""
+        this.adharNo=""
+        this.pinCode=""
+        this.dateOfBirth=""
+        this.email=""
+        this.username=""
+        this.phoneNo=""
+        this.password=""
+        this.confirmPassword=""
+      }
+      else{
+        alert("Add same password!");
+      }
+    }
+  )
+}
 
 }
